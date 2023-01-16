@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg fixed-top">
         <a class="navbar-brand" href="#home"><img src="./images/logo-1.png" alt="" width="60"><img class="logo-purple"
                 src="./images/logo.png" alt="" width="60"></a>
@@ -35,7 +36,7 @@
                     <a class="nav-link" href="#home">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">À propos</a>
+                    <a class="nav-link" href="#about">Propos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#services">Services</a>
@@ -66,6 +67,7 @@
 
 
     </nav>
+
     <!--HOME-->
     <section id="home" class="home" id="home">
         <div class="container d-flex justify-content-around align-items-center">
@@ -83,6 +85,8 @@
         </div>
         </div>
     </section>
+    <!--HOME END-->
+
     <!--ABOUT-->
     <section class="about d-flex justify-content-center align-items-center" id="about">
         <div class="container d-flex flex-wrap justify-content-around align-items-center">
@@ -92,7 +96,7 @@
                 <h2>Road Trip ou petit voyage,</h2>
                 <p>WayTips te propose des circuits sur-mesure, adaptés à tes envies, ton budget et prend en compte les
                     festivités locales. Nous te proposons une expérience unique et hyper-personnalisée.
-                    Partage-nous les dates de ton séjour à Paris et nous t'aiderons à créer ta propre aventure. Tu
+                    Partage-nous les dates de ton séjour et nous t'aiderons à créer ta propre aventure. Tu
                     recevras sous 24 heures ton circuit sur mesure !</p>
                 <div class="about-btn">
                     <a href="#faq" class="btn btn-2">En savoir plus</a>
@@ -100,7 +104,9 @@
             </div>
         </div>
     </section>
+    <!--ABOUT END-->
 
+    <!--SERVICES-->
     <section class="services section-padding" id="services">
         <div class="container">
             <div class="row justify-content-center">
@@ -112,71 +118,72 @@
                 </div>
             </div>
             <div class="row">
-                <div class="owl-carousel services-carousel">
-                    <div class="services-item">
-                        <div class="icon">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="items">
+                        <span class="icon feature_box_col">
                             <i class="fas fa-trailer"></i>
-                        </div>
-                        <h3>Attraction</h3>
+                        </span>
+                        <h6>Attraction</h6>
                         <p>Lieu ou spectacle, notamment le spectacle de rue, les expositions, les manèges ou les
                             montagnes russes.</p>
-
                     </div>
-                    <div class="services-item">
-                        <div class="icon">
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="items">
+                        <span class="icon feature_box_col">
                             <i class="fas fa-running"></i>
-                        </div>
-                        <h3>Sport</h3>
+                        </span>
+                        <h6>Sport</h6>
                         <p>Plusieurs activités physiques exercées dans le sens du jeu et de l'effort sont proposées.</p>
-
                     </div>
-                    <div class="services-item">
-                        <div class="icon">
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="items">
+                        <span class="icon feature_box_col">
                             <i class="fas fa-book-reader"></i>
-                        </div>
-                        <h3>Détente</h3>
+                        </span>
+                        <h6>Détente</h6>
                         <p>Des moments de détente et de bien-être pour un repos bien mérité.</p>
-
+                        <br>
                     </div>
-
-                    <div class="services-item">
-                        <div class="icon">
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="items">
+                        <span class="icon feature_box_col">
                             <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Famille</h3>
+                        </span>
+                        <h6>Famille</h6>
                         <p>Les vacances en famille sont l’occasion de se retrouver tous ensemble, de se ressourcer et de
                             profiter de ses enfants.</p>
-
                     </div>
-
-                    <div class="services-item">
-                        <div class="icon">
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="items">
+                        <span class="icon feature_box_col">
                             <i class="fas fa-landmark"></i>
-                        </div>
-                        <h3>Musée</h3>
+                        </span>
+                        <h6>Musée</h6>
                         <p>Découvrir de manière ludique le patrimoine en lien direct avec la thématique de la visite .
                         </p>
-
+                        <br>
                     </div>
-
-                    <div class="services-item">
-                        <div class="icon">
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="items">
+                        <span class="icon feature_box_col">
                             <i class="fas fa-archway"></i>
-                        </div>
-                        <h3>Monument</h3>
+                        </span>
+                        <h6>Monument</h6>
                         <p>Aux quatre coins du monde, se trouvent des monuments incroyables, de rêve, dont certains sont
                             méconnus par la plupart des gens.</p>
-
                     </div>
-
                 </div>
-
             </div>
         </div>
-        </div>
     </section>
+    <!--SERVICES END-->
 
-    <!--Work-->
+    <!--Fonctionnalités-->
     <section class="work section-padding" id="fonctions">
         <div class="container">
             <div class="row justify-content-center">
@@ -187,342 +194,64 @@
                     </div>
                 </div>
             </div>
-            <br><br>
             <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="work-item line-right">
-                        <div class="step">1</div>
-                        <h3>Télécharge l'application</h3>
-                        <p>L'application sera disponible prochainement sur Google Play.</p>
+                <div class="col-md-8 col-center m-auto">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="img-box"><img src="./images/home.png" alt=""></div>
+                                <h4>Télécharger l'application</h4>
+                                <p class="work-steps">L'application sera disponible prochainement sur Google Play.</p>
+                            </div>
+                            <div class="item carousel-item ">
+                                <div class="img-box"><img src="./images/home.png" alt=""></div>
+                                <h4>Choisis tes centres d'intérêts</h4>
+                                <p class="work-steps">Choisissez parmis nos propositions que l'on vous propose vos
+                                    thèmes préférés .</p>
+                            </div>
+                            <div class="item carousel-item ">
+                                <div class="img-box"><img src="./images/home.png" alt=""></div>
+                                <h4>Paramètre ton voyage</h4>
+                                <p class="work-steps">Mets ta destination, tes dates, le nombre de personnes présentes
+                                    puis ton budget.</p>
+                            </div>
+                            <div class="item carousel-item ">
+                                <div class="img-box"><img src="./images/home.png" alt=""></div>
+                                <h4>Obtiens ton circuit</h4>
+                                <p class="work-steps">Sur une map sur-mesure avec la liste de vos actualités que WayTips
+                                    va vous proposez.</p>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="work-item line-right">
-                        <div class="step">2</div>
-                        <h3>Choisis tes centres d'intérêts</h3>
-                        <p>Choisi parmis nos propositions que l'on vous propose vos thèmes préférés </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="work-item line-right">
-                        <div class="step">3</div>
-                        <h3>Paramètre ton voyage</h3>
-                        <p>Mets ta destination, tes dates, le nombre de personnes présentes puis ton budget.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="work-item">
-                        <div class="step">4</div>
-                        <h3>Obtiens ton <br>circuit</h3>
-                        <p>Sur une map sur-mesure avec la liste de vos actualités que WayTips va vous proposez.</p>
-                    </div>
+
                 </div>
 
             </div>
         </div>
     </section>
-
+    <!--Fonctionnalités END-->
     <section class="blog section-padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div>
                     <div class="section-title">
                         <h3>Blog</h3>
-                        <h2>Voici le blog</h2>
+                        <h2>Nos articles du moments</h2>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Circuit-->
-    <section class="circuit section-padding" id="circuit">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h3>Circuit</h3>
-                        <h2>Organise ton circuit</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="circuit-form">
-                        <form data-multi-step>
-                            <div class="data" data-step>
-                                <h4 class="text-center">Informations personnelles</h4>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" placeholder="Votre nom et prénom" name="nom" id="nom"
-                                                class="form-control" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="mail" placeholder="Votre email" name="email" id="email"
-                                                class="form-control" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <input type="tel" placeholder="Votre téléphone" name="phone" id="phone"
-                                                class="form-control" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row text-center">
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <button type="button" id="next-submit" name="nextpost" class="btn btn-next"
-                                                data-next>Suivant</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="data " data-step>
-                                <h4 class="text-center">Séléctionner vos thèmes préférés</h4>
-                                <div class="row align-items-center">
-                                    <div class="col-lg-4 text-center">
-                                        <a href="" class="btn btn-themes">Attraction</a>
-                                    </div>
-                                    <div class="col-lg-4 text-center">
-                                        <a href="" class="btn btn-themes">Sport</a>
-                                    </div>
-                                    <div class="col-lg-4 text-center">
-                                        <a href="" class="btn btn-themes">Détente</a>
-                                    </div>
-                                    <div class="col-lg-4 text-center">
-                                        <a href="" class="btn btn-themes">Famille</a>
-                                    </div>
-                                    <div class="col-lg-4 text-center">
-                                        <a href="" class="btn btn-themes">Musée</a>
-                                    </div>
-                                    <div class="col-lg-4 text-center">
-                                        <a href="" class="btn btn-themes">Monument</a>
-                                    </div>
-                                </div>
-                                <div class="row text-center">
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <button type="submit" id="previous-submit" name="previouspost"
-                                                class="btn btn-next" data-previous>
-                                                <i class="fas fa-arrow-left"></i>
-                                            </button>
-                                            <button type="button" id="next-submit" name="nextpost" class="btn btn-next"
-                                                data-next> <i class="fas fa-arrow-right"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="data" data-step>
-                                <h4 class="text-center">Date de début et de fin</h4>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="date" name="date_debut" id="date_debut" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="date" name="date_fin" id="date_fin" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" placeholder="Budget Maximum" name="bg_max" id="bg_max"
-                                                class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" placeholder="Budget Minimum" name="bg_min" id="bg_min"
-                                                class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row text-center">
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <button type="button" id="previous-submit" name="previouspost"
-                                                class="btn btn-next" data-previous>
-                                                <i class="fas fa-arrow-left"></i>
-                                            </button>
-                                            <button type="submit" id="btn-submit" name="submitpost"
-                                                class="btn btn-submit">Envoyer</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-      <!--Contact-->
 
-      <section class="contact section-padding" id="contact">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h3>Contact</h3>
-                        <h2>Contactez-nous</h2>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-            <div class="row">
-                <div class="col-lg-4 col-md-5">
-                    <div class="contact-info">
-                        <h3>Pour toutes questions, n'hésitez pas !</h3>
-                        <div class="contact-info-item">
-                            <i class="fas fa-envelope"></i>
-                            <h4>Écrivez-nous au</h4>
-                            <p>waytips@gmail.com</p>
-                        </div>
-                        <div class="contact-info-item">
-                            <i class="fas fa-phone"></i>
-                            <h4>Appeler-nous au</h4>
-                            <p>07 77 05 08 82</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-7">
-                    <div class="contact-form">
-                        <form method="post">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Votre nom et prénom" name="nom" id="nom"
-                                            class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="mail" placeholder="Votre email" name="email" id="email"
-                                            class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input type="tel" placeholder="Votre téléphone" name="phone" id="phone"
-                                            class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Votre sujet" name="sujet" id="sujet"
-                                            class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <textarea placeholder="Votre message" name="message"
-                                            class="form-control"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <button type="submit" id="btn-submit" name="submitpost"
-                                            class="btn-button">Envoyer</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-col">
-                        <h3><img src="./images/logo-1.png" alt="" width="30"> Waytips</h3>
-                        <p class="text-footer">Voyagez, tu choisis la destination et nous t'offrons le meilleur !</p>
-                        <div class="footer-links">
-                            <a href="https://m.facebook.com/trainingcentersympav/" target="_blank"
-                                class="footer__social">
-                                <i class="fa fa-facebook-official"></i>
-                            </a>
-                            <a href="https://twitter.com/TCenter4_0/" target="_blank" class="footer__social">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a href="https://www.instagram.com/trainingcenter4.0/" target="_blank"
-                                class="footer__social">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                            <!-- <a href="https://www.youtube.com/channel/UCqan073e4fkLA_HtG_uWk8Q" target="_blank" class="footer__social">
-                <i class="fa fa-youtube-play"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/tcenter-sympav-28bb571a3/" target="_blank" class="footer__social">
-                <i class="fa fa-linkedin"></i>
-              </a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-col props">
-                        <h3>Liens rapides</h3>
-                        <ul>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#about">À propos</a></li>
-                            <li><a href="#fonctions">Fonctionnalitées</a></li>
-                            <li><a href="#prix">Prix</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#circuit">Circuit</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-col">
-                        <h3>Informations</h3>
-                        <p>Paris, France</p>
-                        <br>
-                        <a class="mail" href="mailto:waytips@gmail.com" class="footer__link">waytips@gmail.com
-                        </a>
-                        <br>
-                        <a class="mail" href="tel:+33757079455" class="footer__link">07 77 05 08 82</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-col">
-                        <h3>Nos Politiques</h3>
-                        <ul>
-                            <li><a href="#">Politique d’utilisation des cookies</a></li>
-                            <li><a href="#">Mentions légales</a></li>
-                            <li><a href="#">Politique de confidentialité</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="copyright-text">&copy;2022 Training Center 4.0. Tous droits réservés.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
 
 
