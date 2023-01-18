@@ -107,9 +107,18 @@ if (isset($_GET['id'])) {
     </nav>
 
     <!--ImageBackground-->
-    <section class="img-background">
-        <div class="color-overlay d-flex justify-content-center align-items-center">
-            <h1 style="font-size: 4rem;">Recherche de posts</h1>
+    <section class="img-background" style="background-image: url('./images/home/rehome.jpg');  
+  background-size: cover; 
+  height: 80vh; 
+  min-height: 300px; 
+  position: relative; 
+  color: var(--white); 
+  text-shadow: var(--shadow-black-100);">
+        <div class="color-overlay d-flex justify-content-center align-items-center" style="position: absolute; 
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.4);">
+            <h1 style="font-size: 4rem;">Posts</h1>
         </div>
     </section>
 

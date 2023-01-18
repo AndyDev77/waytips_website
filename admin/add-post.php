@@ -113,14 +113,21 @@ unset($_SESSION['add-post-data']);
     </nav>
 
     <!--ImageBackground-->
-    <section class="img-background">
+    <!-- <section class="img-background">
         <div class="color-overlay d-flex justify-content-center align-items-center">
             <h1 style="font-size: 4rem;">Ajouter un post</h1>
         </div>
-    </section>
+    </section> -->
 
-    <section class="form__section">
-        <div class="container form__section-container">
+    <section class="form__section" style="background-image: url('../images/home/rehome.jpg');  
+  background-size: cover; 
+  height: 100vh; 
+  min-height: 300px; 
+  position: relative; 
+  color: var(--white); 
+  text-shadow: var(--shadow-black-100);
+  padding: 100px 0;">
+        <div class="container form__section-container"  style="background-color: rgba(0, 0, 0, 0.4); padding: 40px 80px; border-radius: 15px;">
             <h2>Ajouter un post</h2>
             <br><br>
             <?php if(isset($_SESSION['add-post'])) : ?>
@@ -145,7 +152,7 @@ unset($_SESSION['add-post-data']);
                 <textarea rows="10" name="body" value="<?= $body ?>"   placeholder="Body"></textarea>
 
                 <?php if (isset($_SESSION['user_is_admin'])) : ?>
-                    <div class="form__control inline">
+                    <div class="form__control inline" style="display: none;">
                         <input type="checkbox" name="is_featured" value="1" id="is_featured" checked>
                         <label for="is_featured">Fonctionnalités</label>
                     </div>
@@ -157,7 +164,12 @@ unset($_SESSION['add-post-data']);
                 </div>
 
                 <div class="about-btn row justify-content-center">
-                    <button type="submit" name="submit" class="btn btn-2">Ajouter une actualité</button>
+                    <button type="submit" name="submit" class="btn btn-2" style="background-color: var(--color-1);
+  padding: 1rem 2rem;
+  color: var(--white);
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 600;">Ajouter une actualité</button>
                 </div>
             </form>
         </div>

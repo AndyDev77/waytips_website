@@ -420,6 +420,15 @@ a.scrollup.scroll-up.show-scroll {
   cursor: pointer;
 }
 
+/* .about-btn .btn-2 {
+  background-color: var(--color-1);
+  padding: 1rem 2rem;
+  color: var(--white);
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 600;
+} */
+
 /*SERVICES*/
 
 .services .section-title h2 {
@@ -611,7 +620,7 @@ a.scrollup.scroll-up.show-scroll {
 .img-background{
   background-image: url('./images/home/rehome.jpg');  
   background-size: cover; 
-  height: 80vh; 
+  height: 100vh; 
   min-height: 300px; 
   position: relative; 
   color: var(--white); 

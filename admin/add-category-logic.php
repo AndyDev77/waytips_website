@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
             header('location: ' . ROOT_URL . 'admin/add-category.php');
             die();
         } else {
-            $_SESSION['add-category-success'] = "$title ajouté avec succès !";
+            $_SESSION['add-category-success'] = "La catégorie $title a été ajoutée avec succès !";
             header('location: ' . ROOT_URL . 'admin/manage-categories.php');
             die();
         }

@@ -95,14 +95,21 @@ unset($_SESSION['signin-data']);
     </nav>
 
     <!--ImageBackground-->
-    <section class="img-background">
+    <!-- <section class="img-background">
         <div class="color-overlay d-flex justify-content-center align-items-center">
             <h1 style="font-size: 4rem;">Recherche de posts</h1>
         </div>
-    </section>
+    </section> -->
 
-    <section class="form__section">
-        <div class="container form__section-container">
+    <section class="form__section" style="background-image: url('./images/home/rehome.jpg');  
+  background-size: cover; 
+  height: 100vh; 
+  min-height: 300px; 
+  position: relative; 
+  color: var(--white); 
+  text-shadow: var(--shadow-black-100);
+  padding: 100px 0;">
+        <div class="container form__section-container" style="background-color: rgba(0, 0, 0, 0.4); padding: 40px 80px; border-radius: 15px;">
             <h2>Se connecter</h2>
             <p class="text-admin">Cette accès est seulement réserver aux administrateurs du site</p>
             <br>
@@ -131,7 +138,12 @@ unset($_SESSION['signin-data']);
                 <input type="text" name="username_email" value="<?= $username_email ?>" placeholder="Nom d'utilisateur ou email">
                 <input type="password" name="password" value="<?= $password ?>" placeholder="Mot de passe">
                 <div class="about-btn row justify-content-center">
-                    <button type="submit" name="submit" class="btn btn-2">Envoyer</button>
+                    <button type="submit" name="submit" class="btn btn-2" style="background-color: var(--color-1);
+  padding: 1rem 2rem;
+  color: var(--white);
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 600;">Envoyer</button>
                 </div>
             </form>
         </div>

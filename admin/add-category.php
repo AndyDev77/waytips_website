@@ -107,15 +107,23 @@ $description = $_SESSION['add-category-data']['description'] ?? null;
     </nav>
 
     <!--ImageBackground-->
-    <section class="img-background">
+    <!-- <section class="img-background">
         <div class="color-overlay d-flex justify-content-center align-items-center">
             <h1 style="font-size: 4rem;">Ajouter une catégorie</h1>
         </div>
-    </section>
+    </section> -->
 
-    <section class="form__section">
-        <div class="container form__section-container">
+    <section class="form__section" style="background-image: url('../images/home/rehome.jpg');  
+  background-size: cover; 
+  height: 100vh; 
+  min-height: 300px; 
+  position: relative; 
+  color: var(--white); 
+  text-shadow: var(--shadow-black-100);
+  padding: 100px 0;">
+        <div class="container form__section-container" style="background-color: rgba(0, 0, 0, 0.4); padding: 40px 80px; border-radius: 15px;">
             <h2>Ajouter une categorie</h2>
+            <br>
             <?php if(isset($_SESSION['add-category'])) : ?>
                 <div class="alert__message error">
                     <p>
@@ -129,7 +137,12 @@ $description = $_SESSION['add-category-data']['description'] ?? null;
                 <input type="text" name="title" value="<?= $title ?>" placeholder="Titre">
                 <textarea rows="4" name="description" value="<?= $description ?>" placeholder="Description"></textarea>
                 <div class="about-btn row justify-content-center">
-                    <button type="submit" name="submit" class="btn btn-2">Ajouter une catégorie</button>
+                    <button type="submit" name="submit" class="btn btn-2" style="background-color: var(--color-1);
+  padding: 1rem 2rem;
+  color: var(--white);
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 600;">Ajouter une catégorie</button>
                 </div>
             </form>
         </div>

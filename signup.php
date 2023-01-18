@@ -101,14 +101,30 @@ unset($_SESSION['signup-data']);
     </nav>
 
     <!--ImageBackground-->
-    <section class="img-background">
-        <div class="color-overlay d-flex justify-content-center align-items-center">
+    <!-- <section class="img-background" style="background-image: url('./images/home/rehome.jpg');  
+  background-size: cover; 
+  height: 80vh; 
+  min-height: 300px; 
+  position: relative; 
+  color: var(--white); 
+  text-shadow: var(--shadow-black-100);">
+        <div class="color-overlay d-flex justify-content-center align-items-center" style="position: absolute; 
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.4);">
             <h1 style="font-size: 4rem;">Recherche de posts</h1>
         </div>
-    </section>
+    </section> -->
 
-    <section class="form__section-signup section-padding">
-        <div class="container form__section-container">
+    <section class="form__section-signup "  style="background-image: url('./images/home/rehome.jpg');  
+  background-size: cover; 
+  height: 100vh; 
+  min-height: 300px; 
+  position: relative; 
+  color: var(--white); 
+  text-shadow: var(--shadow-black-100);
+  padding: 100px 0;">
+        <div class="container form__section-container" style="background-color: rgba(0, 0, 0, 0.4); padding: 40px 80px; border-radius: 15px;">
             <h2>Inscrivez-Vous</h2>
             <br>
             <?php
@@ -135,7 +151,12 @@ unset($_SESSION['signup-data']);
                 </div>
                 <br>
                 <div class=" about-btn row justify-content-center">
-                    <button type="submit" name="submit" class="btn btn-2">Envoyer</button>
+                    <button type="submit" name="submit" class="btn btn-2" style="background-color: var(--color-1);
+  padding: 1rem 2rem;
+  color: var(--white);
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 600;">Envoyer</button>
                 </div>
                 <br>
                 <div class="row justify-content-center">

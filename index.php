@@ -1,3 +1,30 @@
+<?php
+require './admin/config/database.php';
+
+// fetch current user from database
+if (isset($_SESSION['user-id'])) {
+    $id = filter_var($_SESSION['user-id'], FILTER_SANITIZE_NUMBER_INT);
+    $query = "SELECT avatar FROM users WHERE id=$id ";
+    $result = mysqli_query($connexion, $query);
+    $avatar = mysqli_fetch_assoc($result);
+}
+
+//fetch featured post from database
+$featured_query = "SELECT * FROM posts WHERE is_featured=1";
+$featured_result = mysqli_query($connexion, $featured_query);
+$featured = mysqli_fetch_assoc($featured_result);
+
+
+
+// fetch 6 posts from posts table
+
+$queryPosts = "SELECT * FROM posts ORDER BY date_time DESC LIMIT 3";
+$posts = mysqli_query($connexion, $queryPosts);
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -237,6 +264,7 @@
         </div>
     </section>
     <!--Fonctionnalités END-->
+
     <section class="blog section-padding">
         <div class="container">
             <div class="row justify-content-center">
@@ -247,8 +275,45 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                
+            <div class="row justify-content-center">
+                <section class="posts">
+                    <div class="container posts__container">
+                        <?php while ($post = mysqli_fetch_assoc($posts)) : ?>
+                            <article class="post">
+                                <div class="post__thumbnail">
+                                    <img src="./images/<?= $post['thumbnail'] ?>" alt="">
+                                </div>
+                                <div class="post__info">
+                                    <?php
+                                    //fetch category from categories table using category_id of post
+                                    $category_id = $post['category_id'];
+                                    $category_query = "SELECT * FROM categories WHERE id= $category_id";
+                                    $category_result = mysqli_query($connexion, $category_query);
+                                    $category = mysqli_fetch_assoc($category_result);
+                                    $category_title = $category['title'];
+
+                                    ?>
+                                    <a href="#" class="category__button"><?= $category['title'] ?></a>
+                                    <h3> <a href="<?= ROOT_URL ?>post.php?id=<?= $post['id'] ?>"><?= $post['title'] ?></a>
+                                    </h3>
+                                    <p class="post__body">
+                                        <?= substr($post['body'], 0, 200) ?>...
+                                    </p>
+                                    <div class="post__author">
+                                        <div class="post__author-info">
+
+                                            <small><?= date("M d, Y - H:i", strtotime($post['date_time'])) ?></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        <?php endwhile ?>
+                    </div>
+                    </section>
+                    <div class="about-btn">
+                        <a href="blog.php" class="btn btn-2">Voir notre blog</a>
+                    </div>
+                </section>
             </div>
         </div>
     </section>

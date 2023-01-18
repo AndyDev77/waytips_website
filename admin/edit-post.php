@@ -112,14 +112,21 @@ if (isset($_GET['id'])) {
     </nav>
 
     <!--ImageBackground-->
-    <section class="img-background">
+    <!-- <section class="img-background">
         <div class="color-overlay d-flex justify-content-center align-items-center">
             <h1 style="font-size: 4rem;">Modifier un post</h1>
         </div>
-    </section>
+    </section> -->
 
-    <section class="form__section">
-        <div class="container form__section-container">
+    <section class="form__section" style="background-image: url('../images/home/rehome.jpg');  
+  background-size: cover; 
+  height: 100vh; 
+  min-height: 300px; 
+  position: relative; 
+  color: var(--white); 
+  text-shadow: var(--shadow-black-100);
+  padding: 100px 0;"s>
+        <div class="container form__section-container"  style="background-color: rgba(0, 0, 0, 0.4); padding: 40px 80px; border-radius: 15px;">
             <h2>Modifier un post</h2>
             <form action="<?= ROOT_URL ?>admin/edit-post-logic.php" class="form-sign" enctype="multipart/form-data" method="POST">
 
@@ -148,7 +155,12 @@ if (isset($_GET['id'])) {
                 </div>
 
                 <div class="about-btn row justify-content-center">
-                    <button type="submit" name="submit" class="btn btn-2">Modifier l'actualité</button>
+                    <button type="submit" name="submit" class="btn btn-2" style="background-color: var(--color-1);
+  padding: 1rem 2rem;
+  color: var(--white);
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 600;">Modifier l'actualité</button>
                 </div>
             </form>
         </div>

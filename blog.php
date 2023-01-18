@@ -18,7 +18,7 @@ $featured = mysqli_fetch_assoc($featured_result);
 
 // fetch 6 posts from posts table
 
-$queryPosts = "SELECT * FROM posts ORDER BY date_time DESC LIMIT 6";
+$queryPosts = "SELECT * FROM posts ORDER BY date_time DESC LIMIT 9";
 $posts = mysqli_query($connexion, $queryPosts);
 
 
@@ -137,7 +137,7 @@ $posts = mysqli_query($connexion, $queryPosts);
                 <i class="fa fa-search"></i>
                 <input type="search" id="search" class="serach" name="search" placeholder="Recherche" />
             </div>
-            <button type="submit" name="submit" class="btn-search">Go</button>
+            <button type="submit" name="submit" class="btn-search">Voir</button>
         </form>
     </section>
 
