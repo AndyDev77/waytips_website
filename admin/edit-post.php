@@ -60,32 +60,32 @@ if (isset($_GET['id'])) {
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Accueil</a>
+            <li class="nav-item">
+                    <a class="nav-link" href="../index.php#home">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">Propos</a>
+                    <a class="nav-link" href="../index.php#about">Propos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="../index.php#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#fonctions">Fonctionnalitées</a>
+                    <a class="nav-link" href="../index.php#fonctions">Fonctionnalitées</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="#prix">Prix</a>
                 </li> -->
 
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.php">Blog</a>
+                    <a class="nav-link" href="../blog.php">Blog</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#circuit">Circuit</a>
+                    <a class="nav-link" href="../index.php#circuit">Circuit</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="../index.php#contact">Contact</a>
                 </li>
                 <?php if (isset($_SESSION['user-id'])) : ?>
                     <li class="nav__profile nav-item">

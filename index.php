@@ -310,10 +310,111 @@ $posts = mysqli_query($connexion, $queryPosts);
                         <?php endwhile ?>
                     </div>
                     </section>
-                    <div class="about-btn">
+                    <div class="blog-btn">
                         <a href="blog.php" class="btn btn-2">Voir notre blog</a>
                     </div>
                 </section>
+            </div>
+        </div>
+    </section>
+    
+    <!--Circuit-->
+    <section class="circuit">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title">
+                    <h3>Circuit</h3>
+                    <h2>Organise le dès maintenant</h2>
+                  </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-7">
+                    <div class="circuit-form">
+                        <form method="POST">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                      <input type="text" placeholder="Votre nom et prénom" name="nom" id="nom" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="mail" placeholder="Votre email" name="email" id="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                      <input type="text" placeholder="destination" name="destination" id="destination" class="form-control">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="check-cont">
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" id="btn-themes" name="themes[]" value="Attraction">
+                                            <span>Attraction</span> 
+                                        </label>
+                                        &nbsp;&nbsp;
+                                        <label>
+                                            <input type="checkbox" id="btn-themes-1" name="themes[]" value="Sport">  
+                                            <span>Sport</span>
+                                        </label>
+                                        &nbsp;&nbsp;
+                                        <label>
+                                            <input type="checkbox" id="btn-themes-2" name="themes[]" value="Détente"> 
+                                            <span>Détente</span>
+                                        </label>
+                                        &nbsp;&nbsp;
+                                        <label>
+                                            <input type="checkbox" id="btn-themes-3" name="themes[]" value="Famille"> 
+                                            <span>Famille</span>
+                                        </label>
+                                        &nbsp;&nbsp;
+                                        <label>
+                                            <input type="checkbox" id="btn-themes-4" name="themes[]" value="Musée"> 
+                                            <span>Musée</span>
+                                        </label>
+                                        &nbsp;&nbsp;
+                                        <label>
+                                            <input type="checkbox" id="btn-themes-5"  name="themes[]" value="Monument"> 
+                                            <span>Monument</span>
+                                        </label>
+                                    </div>
+            
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                      <input type="date" placeholder="dete de début" name="date_debut" id="date_debut" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                      <input type="date" placeholder="dete de fin" name="date_fin" id="date_fin" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Votre budget maximum" name="budget" id="budget" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                      <input type="text" placeholder="Nombre de voyageurs" name="nb_voyageurs" id="nb_voyageurs" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                      <div class="form-group ">
+                                        <button type="submit" id="btn-submit" name="submitpost" class="btn-button ">Envoyer</button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
