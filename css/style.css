@@ -1146,6 +1146,96 @@ select {
 
 
 
+/*Contact*/
+
+/*Contact*/
+
+.contact {
+  background-color: var(--royal-blue-dark);
+  padding: 150px 0;
+  border-radius: 0 0 200px 0;
+}
+
+.contact .section-title h2 {
+  color: var(--block-100);
+}
+
+.contact-info h3 {
+  font-size: 25px;
+  color: var(--block-100);
+  font-weight: 500;
+  margin: 0 0 40px;
+}
+
+.contact-info-item {
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 30px;
+}
+
+.contact-info-item i {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  font-size: 16px;
+  color: var(--block-100);
+  border: 1px solid var(--block-100);
+  text-align: center;
+  line-height: 38px;
+}
+
+.contact-info-item h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  color: var(--block-100);
+}
+
+.contact-info-item p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 26px;
+  color: #fff;
+}
+
+.contact-form .form-control {
+  height: 52px;
+  border: 1px solid transparent;
+  box-shadow: var(--shadow-black-100);
+  border-radius: 5px;
+  padding: 0 24px;
+  color: var(--block-400);
+  background-color: var(--block-100);
+  transition: all 0.5s ease;
+}
+
+.contact-form textarea.form-control {
+  height: 140px;
+  padding-top: 12px;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--color-1);
+}
+
+.contact .btn-button {
+  background-color: var(--color-1);
+  padding: 1rem 2rem;
+  color: var(--block-100);
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.contact .btn-button:hover {
+  background-color: var(--color-2);
+}
 
 
 

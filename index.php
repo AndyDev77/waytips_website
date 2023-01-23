@@ -47,12 +47,10 @@ $posts = mysqli_query($connexion, $queryPosts);
 <body>
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="#home"><img src="./images/logo-1.png" alt="" width="60"><img class="logo-purple"
-                src="./images/logo.png" alt="" width="60"></a>
+        <a class="navbar-brand" href="#home"><img src="./images/logo-1.png" alt="" width="60"><img class="logo-purple" src="./images/logo.png" alt="" width="60"></a>
 
         <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
-            style="margin: 0 70px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="margin: 0 70px;">
             <i class="fas fa-bars"></i>
         </button>
 
@@ -309,24 +307,24 @@ $posts = mysqli_query($connexion, $queryPosts);
                             </article>
                         <?php endwhile ?>
                     </div>
-                    </section>
-                    <div class="blog-btn">
-                        <a href="blog.php" class="btn btn-2">Voir notre blog</a>
-                    </div>
                 </section>
-            </div>
-        </div>
+                <div class="blog-btn">
+                    <a href="blog.php" class="btn btn-2">Voir notre blog</a>
+                </div>
     </section>
-    
+    </div>
+    </div>
+    </section>
+
     <!--Circuit-->
-    <section class="circuit">
+    <section class="circuit section-padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                  <div class="section-title">
-                    <h3>Circuit</h3>
-                    <h2>Organise le dès maintenant</h2>
-                  </div>
+                    <div class="section-title">
+                        <h3>Circuit</h3>
+                        <h2>Organise le dès maintenant</h2>
+                    </div>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -336,7 +334,7 @@ $posts = mysqli_query($connexion, $queryPosts);
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                      <input type="text" placeholder="Votre nom et prénom" name="nom" id="nom" class="form-control">
+                                        <input type="text" placeholder="Votre nom et prénom" name="nom" id="nom" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -346,7 +344,7 @@ $posts = mysqli_query($connexion, $queryPosts);
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                      <input type="text" placeholder="destination" name="destination" id="destination" class="form-control">
+                                        <input type="text" placeholder="destination" name="destination" id="destination" class="form-control">
                                     </div>
                                 </div>
                                 <br>
@@ -354,44 +352,44 @@ $posts = mysqli_query($connexion, $queryPosts);
                                     <div>
                                         <label>
                                             <input type="checkbox" id="btn-themes" name="themes[]" value="Attraction">
-                                            <span>Attraction</span> 
+                                            <span>Attraction</span>
                                         </label>
                                         &nbsp;&nbsp;
                                         <label>
-                                            <input type="checkbox" id="btn-themes-1" name="themes[]" value="Sport">  
+                                            <input type="checkbox" id="btn-themes-1" name="themes[]" value="Sport">
                                             <span>Sport</span>
                                         </label>
                                         &nbsp;&nbsp;
                                         <label>
-                                            <input type="checkbox" id="btn-themes-2" name="themes[]" value="Détente"> 
+                                            <input type="checkbox" id="btn-themes-2" name="themes[]" value="Détente">
                                             <span>Détente</span>
                                         </label>
                                         &nbsp;&nbsp;
                                         <label>
-                                            <input type="checkbox" id="btn-themes-3" name="themes[]" value="Famille"> 
+                                            <input type="checkbox" id="btn-themes-3" name="themes[]" value="Famille">
                                             <span>Famille</span>
                                         </label>
                                         &nbsp;&nbsp;
                                         <label>
-                                            <input type="checkbox" id="btn-themes-4" name="themes[]" value="Musée"> 
+                                            <input type="checkbox" id="btn-themes-4" name="themes[]" value="Musée">
                                             <span>Musée</span>
                                         </label>
                                         &nbsp;&nbsp;
                                         <label>
-                                            <input type="checkbox" id="btn-themes-5"  name="themes[]" value="Monument"> 
+                                            <input type="checkbox" id="btn-themes-5" name="themes[]" value="Monument">
                                             <span>Monument</span>
                                         </label>
                                     </div>
-            
+
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                      <input type="date" placeholder="dete de début" name="date_debut" id="date_debut" class="form-control">
+                                        <input type="date" placeholder="dete de début" name="date_debut" id="date_debut" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                      <input type="date" placeholder="dete de fin" name="date_fin" id="date_fin" class="form-control">
+                                        <input type="date" placeholder="dete de fin" name="date_fin" id="date_fin" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -401,14 +399,100 @@ $posts = mysqli_query($connexion, $queryPosts);
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                      <input type="text" placeholder="Nombre de voyageurs" name="nb_voyageurs" id="nb_voyageurs" class="form-control">
+                                        <input type="text" placeholder="Nombre de voyageurs" name="nb_voyageurs" id="nb_voyageurs" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12">
-                                      <div class="form-group ">
-                                        <button type="submit" id="btn-submit" name="submitpost" class="btn-button ">Envoyer</button>
-                                      </div>
+                                        <div class="form-group ">
+                                            <button type="submit" id="btn-submit" name="submitpost" class="btn-button ">Envoyer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h2>Contactez-nous</h2>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-4 col-md-5">
+                    <div class="contact-info">
+                        <h3>Pour toutes questions, n'hésitez pas !</h3>
+                        <div class="contact-info-item">
+                            <i class="fas fa-location-arrow"></i>
+                            <h4>Localisation</h4>
+                            <p>Paris, 75019</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Écrivez-nous au</h4>
+                            <p>waytips@pgmail.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-phone"></i>
+                            <h4>Appeler-nous au</h4>
+                            <p>07 77 05 08 82</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7">
+                    <div class="contact-form">
+                        <form method="post">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Votre nom et prénom" name="nom" id="nom" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="mail" placeholder="Votre email" name="email" id="email" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="tel" placeholder="Votre téléphone" name="phone" id="phone" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Votre sujet" name="sujet" id="sujet" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <textarea placeholder="Votre message" name="message" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                <div class="col-lg-12">
+                  <div class="g-recaptcha" data-sitekey="6Lf_S8cgAAAAACyb2oa3adJdNfTRu5oWhIDfHCOc"></div>
+                </div>
+              </div> -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <button type="submit" id="btn-submit" name="submitpost" class="btn-button">Envoyer</button>
                                     </div>
                                 </div>
                             </div>
@@ -444,8 +528,8 @@ $posts = mysqli_query($connexion, $queryPosts);
     <!-- main js -->
     <script src="js/main.js"></script>
     <script>
-        $(document).ready(function () {
-            $(window).bind("scroll", function () {
+        $(document).ready(function() {
+            $(window).bind("scroll", function() {
                 let gap = 80;
                 if ($(window).scrollTop() > gap) {
                     $("nav").addClass("active");
